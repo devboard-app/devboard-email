@@ -22,7 +22,7 @@ async def send_email(to: str, subject: str, template: str, variables: dict)->boo
         message["To"] = to
         message["Subject"] = subject
         message.attach(MIMEText(html,"html"))
-        await aiosmtplib.send(message, hostname=settings.SMTP_HOST, port=settings.SMTP_PORT, username=settings.SMTP_USER, password=settings.SMTP_PASSWORD, start_tls=True) #type: ignore
+        await aiosmtplib.send(message, hostname=settings.SMTP_HOST, port=settings.SMTP_PORT, username=settings.SMTP_USER, password=settings.SMTP_PASSWORD, start_tls=True) 
         return True
     except Exception as e:
         print(f"Email error: {e}")
