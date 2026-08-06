@@ -1,5 +1,6 @@
 
 from fastapi import APIRouter, HTTPException, status
+
 from app.schemas.email import SendEmailRequest, SendEmailResponse
 from app.services.email import send_email
 

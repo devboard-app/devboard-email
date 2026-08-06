@@ -1,9 +1,10 @@
-import aiosmtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from jinja2 import Environment, FileSystemLoader
-from app.config import settings
 
+import aiosmtplib
+from jinja2 import Environment, FileSystemLoader
+
+from app.config import settings
 
 jinja_env = Environment(
     loader=FileSystemLoader("app/templates")
