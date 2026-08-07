@@ -1,0 +1,16 @@
+services:
+  devboard-email:
+    build:
+      context: .
+    container_name: devboard-email
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8002:8000"
+    networks:
+      - devboard-network
+
+networks:
+  devboard-network:
+    name: devboard-network
+    external: true
