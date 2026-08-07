@@ -19,7 +19,6 @@ pydantic-settings==2.14.2
 pydantic_core==2.46.4
 python-dotenv==1.2.2
 PyYAML==6.0.3
-resend==2.35.0
 ruff==0.16.1
 starlette==1.4.0
 typing-inspection==0.4.2
