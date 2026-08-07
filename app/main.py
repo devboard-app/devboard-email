@@ -5,9 +5,8 @@ from app.routers import email
 
 app = FastAPI(
     title="Devboard Email Service",
-    dependencies=[Depends(verify_email_service_secret_key)]
 )
-app.include_router(email.router)
+app.include_router(email.router, dependencies=[Depends(verify_email_service_secret_key)])
 
 @app.get("/health")
 async def health():
