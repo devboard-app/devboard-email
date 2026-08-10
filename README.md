@@ -19,7 +19,7 @@ Copy `.env.example` to `.env` and fill in the values.
 | `SMTP_USER` | SMTP username |
 | `SMTP_PASSWORD` | SMTP password |
 | `MAIL_FROM` | Sender email address |
-| `EMAIL_SERVICE_SECRET_KEY` | Shared secret key — must match `EMAIL_SERVICE_SECRET_KEY` in devboard-auth |
+| `INTERNAL_API_KEY` | Shared secret key — must match `INTERNAL_API_KEY` in devboard-auth |
 
 ## Running with Docker
 
@@ -37,7 +37,7 @@ Base path: `/email`
 
 All routes (except `/health`) require the header:
 ```
-X-Service-Key: <EMAIL_SERVICE_SECRET_KEY>
+X-Service-Key: <INTERNAL_API_KEY>
 ```
 
 | Method | Endpoint | Description |

@@ -9,6 +9,6 @@ class Settings(BaseSettings):
     SMTP_USER: str
     SMTP_PASSWORD: str
     MAIL_FROM: str
-    EMAIL_SERVICE_SECRET_KEY: str
+    INTERNAL_API_KEY: str
 
 settings = Settings() #type: ignore
