@@ -12,7 +12,7 @@ jinja_env = Environment(
 
 def render_template(template_name:str, variables: dict)-> str:
     template=jinja_env.get_template(f"{template_name}.html")
-    return template.render(**variables)
+    return template.render(**variables, app_url=settings.APP_URL)
 
 async def send_email(to: str, subject: str, template: str, variables: dict)->bool:
     try:
