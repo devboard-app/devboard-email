@@ -3,7 +3,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 import aiosmtplib
-from jinja2 import Environment, FileSystemLoader, TemplateNotFound
+from jinja2 import Environment, FileSystemLoader, TemplateNotFound, select_autoescape
 
 from app.config import settings
 from app.exceptions import (
@@ -15,7 +15,8 @@ from app.exceptions import (
 logger = logging.getLogger(__name__)
 
 jinja_env = Environment(
-    loader=FileSystemLoader("app/templates")
+    loader=FileSystemLoader("app/templates"),
+    autoescape=select_autoescape(["html", "xml"]),
 )
 
 def render_template(template_name:str, variables: dict)-> str:
