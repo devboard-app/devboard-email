@@ -4,184 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Verify your DevBoard email</title>
+  <title>Confirm your email</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-    body { margin: 0; padding: 0; background-color: #0f1117; font-family: 'Inter', Arial, sans-serif; }
+    body { margin: 0; padding: 0; background-color: #f4f4f5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     table { border-collapse: collapse; }
     img { border: 0; display: block; }
     a { text-decoration: none; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 520px) {
       .email-wrapper { width: 100% !important; }
-      .email-body { padding: 24px 20px !important; }
-      .btn { width: 100% !important; text-align: center !important; }
+      .email-body { padding: 32px 24px !important; }
     }
   </style>
 </head>
-<body style="margin:0;padding:0;background-color:#0f1117;">
+<body style="margin:0;padding:0;background-color:#f4f4f5;">
 
-  <!-- Outer wrapper -->
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0f1117;padding:40px 20px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f5;padding:48px 20px;">
     <tr>
       <td align="center">
 
-        <!-- Email card -->
-        <table class="email-wrapper" role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+        <table class="email-wrapper" role="presentation" width="480" cellpadding="0" cellspacing="0" style="max-width:480px;width:100%;">
 
-          <!-- Header -->
+          <!-- Wordmark -->
           <tr>
-            <td align="center" style="padding-bottom:32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="background-color:#1e2333;border:1px solid #2a2f42;border-radius:12px;padding:16px 24px;">
-                    <table role="presentation" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="padding-right:10px;">
-                          <div style="width:28px;height:28px;background:linear-gradient(135deg,#6c8fff,#a78bfa);border-radius:6px;display:inline-block;"></div>
-                        </td>
-                        <td>
-                          <span style="font-family:'Inter',Arial,sans-serif;font-size:16px;font-weight:700;color:#e2e6f0;letter-spacing:-0.02em;">DevBoard</span>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
+            <td align="center" style="padding-bottom:36px;">
+              <span style="font-size:15px;font-weight:700;color:#09090b;letter-spacing:-0.01em;">DevBoard</span>
             </td>
           </tr>
 
-          <!-- Main card -->
+          <!-- Card -->
           <tr>
-            <td style="background-color:#181c27;border:1px solid #2a2f42;border-radius:16px;overflow:hidden;">
+            <td style="background-color:#ffffff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
 
-              <!-- Top accent bar -->
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td style="height:3px;background:linear-gradient(90deg,#6c8fff 0%,#a78bfa 50%,#6c8fff 100%);font-size:0;line-height:0;">&nbsp;</td>
-                </tr>
-              </table>
+                  <td class="email-body" style="padding:44px 40px 32px;">
 
-              <!-- Hero section -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td align="center" style="padding:48px 48px 0;background-color:#181c27;">
+                    <p style="margin:0 0 10px;font-size:11px;font-weight:600;color:#a1a1aa;letter-spacing:0.08em;text-transform:uppercase;">
+                      Email verification
+                    </p>
 
-                    <!-- Icon circle -->
+                    <p style="margin:0 0 12px;font-size:20px;font-weight:600;color:#09090b;line-height:1.3;">
+                      Confirm your email
+                    </p>
+
+                    <p style="margin:0 0 28px;font-size:14px;color:#52525b;line-height:1.65;">
+                      Click the button below to verify your email address and activate your DevBoard account.
+                    </p>
+
                     <table role="presentation" cellpadding="0" cellspacing="0">
                       <tr>
-                        <td align="center" style="width:72px;height:72px;background-color:#1e2333;border:1px solid #2a2f42;border-radius:50%;">
-                          <!-- Envelope SVG inline -->
-                          <img src="https://img.icons8.com/fluency/96/email-open.png" width="40" height="40" alt="Email" style="margin:16px auto;display:block;">
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!-- Heading -->
-                    <p style="margin:24px 0 8px;font-family:'Inter',Arial,sans-serif;font-size:26px;font-weight:700;color:#e2e6f0;letter-spacing:-0.02em;text-align:center;line-height:1.2;">
-                      Verify your email address
-                    </p>
-
-                    <!-- Subheading -->
-                    <p style="margin:0;font-family:'Inter',Arial,sans-serif;font-size:15px;color:#7a82a0;text-align:center;line-height:1.6;max-width:360px;">
-                      You're one step away from accessing your DevBoard workspace. Confirm your email to activate your account.
-                    </p>
-
-                  </td>
-                </tr>
-              </table>
-
-              <!-- Divider -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding:32px 48px 0;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="height:1px;background-color:#2a2f42;font-size:0;line-height:0;">&nbsp;</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-              <!-- Body -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="email-body" style="padding:32px 48px;">
-
-                    <p style="margin:0 0 24px;font-family:'Inter',Arial,sans-serif;font-size:14px;color:#7a82a0;line-height:1.7;">
-                      Hi there,
-                    </p>
-
-                    <p style="margin:0 0 32px;font-family:'Inter',Arial,sans-serif;font-size:14px;color:#a0a8c0;line-height:1.7;">
-                      We received a request to verify this email address for a DevBoard account. Click the button below to confirm and get started.
-                    </p>
-
-                    <!-- CTA Button -->
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td align="center" style="padding:0;">
+                        <td style="border-radius:6px;background-color:#18181b;">
                           <a href="{{ verification_link }}"
-                            style="display:block;width:100%;max-width:100%;box-sizing:border-box;background:linear-gradient(135deg,#6c8fff,#a78bfa);color:#ffffff;font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:600;letter-spacing:-0.01em;padding:16px 40px;border-radius:8px;text-decoration:none;text-align:center;white-space:nowrap;">
-                            Verify email address →
+                            style="display:inline-block;padding:12px 28px;font-size:14px;font-weight:600;color:#ffffff;letter-spacing:0.01em;">
+                            Verify email
                           </a>
                         </td>
                       </tr>
                     </table>
 
-                    <!-- Expiry notice -->
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:24px;">
-                      <tr>
-                        <td style="background-color:#1e2333;border:1px solid #2a2f42;border-radius:8px;padding:14px 16px;">
-                          <table role="presentation" cellpadding="0" cellspacing="0">
-                            <tr>
-                              <td style="padding-right:10px;vertical-align:middle;">
-                                <span style="font-size:16px;">⏱</span>
-                              </td>
-                              <td>
-                                <p style="margin:0;font-family:'Inter',Arial,sans-serif;font-size:12px;color:#7a82a0;line-height:1.5;">
-                                  This link expires in <strong style="color:#a0a8c0;">24 hours</strong>. After that, you'll need to request a new verification email.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!-- Manual link fallback -->
-                    <p style="margin:28px 0 0;font-family:'Inter',Arial,sans-serif;font-size:12px;color:#4a5270;line-height:1.7;">
-                      Button not working? Copy and paste this link into your browser:
+                    <p style="margin:20px 0 0;font-size:13px;color:#a1a1aa;line-height:1.6;">
+                      This link expires in 24 hours.
                     </p>
-                    <p style="margin:4px 0 0;font-family:'Courier New',monospace;font-size:11px;color:#6c8fff;word-break:break-all;line-height:1.6;">
+
+                  </td>
+                </tr>
+              </table>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="border-top:1px solid #f0f0f1;padding:20px 40px;">
+                    <p style="margin:0 0 6px;font-size:12px;color:#a1a1aa;line-height:1.6;">
+                      Or paste this link into your browser:
+                    </p>
+                    <p style="margin:0;font-size:12px;color:#4f46e5;word-break:break-all;line-height:1.6;">
                       {{ verification_link }}
-                    </p>
-
-                  </td>
-                </tr>
-              </table>
-
-              <!-- Divider -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding:0 48px;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="height:1px;background-color:#2a2f42;font-size:0;line-height:0;">&nbsp;</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-              <!-- Footer -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td style="padding:24px 48px 40px;">
-                    <p style="margin:0 0 8px;font-family:'Inter',Arial,sans-serif;font-size:12px;color:#4a5270;line-height:1.6;">
-                      Didn't create a DevBoard account? You can safely ignore this email — nothing will happen and your email address won't be used.
-                    </p>
-                    <p style="margin:0;font-family:'Inter',Arial,sans-serif;font-size:12px;color:#4a5270;line-height:1.6;">
-                      © 2026 DevBoard · All rights reserved
                     </p>
                   </td>
                 </tr>
@@ -190,9 +86,16 @@
             </td>
           </tr>
 
-          <!-- Bottom spacing -->
+          <!-- Footer -->
           <tr>
-            <td style="height:40px;">&nbsp;</td>
+            <td align="center" style="padding-top:28px;">
+              <p style="margin:0 0 4px;font-size:12px;color:#a1a1aa;line-height:1.6;">
+                If you didn't create a DevBoard account, you can ignore this email.
+              </p>
+              <p style="margin:0;font-size:12px;color:#d4d4d8;line-height:1.6;">
+                DevBoard
+              </p>
+            </td>
           </tr>
 
         </table>
