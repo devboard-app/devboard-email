@@ -100,7 +100,7 @@ Copy `.env.example` to `.env`.
 | `SMTP_USER` `SMTP_PASSWORD` | Mail server login. |
 | `MAIL_FROM` | The "From" address. |
 | `INTERNAL_API_KEY` | Shared key. Must match the other services. |
-| `APP_URL` | Base URL of the web app, used inside templates. **Required, but missing from `.env.example`. Add it yourself.** |
+| `APP_URL` | Base URL of the web app, used inside templates. |
 
 ---
 
