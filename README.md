@@ -2,7 +2,7 @@
 
 **The mail sender.** Other services send it a template name and some values. It builds the HTML email and sends it over SMTP.
 
-- **Port:** `8002`
+- **Port:** `18002`
 - **Stack:** FastAPI, aiosmtplib, Jinja2
 - **Private:** never expose it to the public internet. Only other DevBoard services call it.
 
@@ -18,7 +18,7 @@
 docker compose up --build -d
 ```
 
-4. Open `http://localhost:8002/health`. You should see `{"status": "ok"}`.
+4. Open `http://localhost:18002/health`. You should see `{"status": "ok"}`.
 
 Or start the whole stack with `setup.bat` in `devboard-infra`.
 
@@ -27,7 +27,7 @@ Or start the whole stack with `setup.bat` in `devboard-infra`.
 ## Send a test email
 
 ```bash
-curl -X POST http://localhost:8002/email/send/ \
+curl -X POST http://localhost:18002/email/send/ \
   -H "X-Service-Key: <INTERNAL_API_KEY>" \
   -H "Content-Type: application/json" \
   -d '{"to":"you@example.com","subject":"Hi","template":"verification","variables":{"verification_link":"http://localhost"}}'

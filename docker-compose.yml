@@ -11,11 +11,11 @@ services:
     restart: unless-stopped
     env_file: .env
     ports:
-      - "8002:8000"
+      - "18002:8000"
     networks:
-      - devboard-network
+      - devboard-ic-network
 
 networks:
-  devboard-network:
-    name: devboard-network
+  devboard-ic-network:
+    name: devboard-ic-network
     external: true
