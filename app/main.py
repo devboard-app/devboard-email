@@ -10,6 +10,7 @@ app = FastAPI(
 register_exception_handlers(app)
 app.include_router(email.router, dependencies=[Depends(verify_internal_api_key)])
 
+
 @app.get("/health")
 async def health():
-    return {"message":"ok"}
+    return {"message": "ok"}

@@ -5,7 +5,8 @@ class SendEmailRequest(BaseModel):
     to: EmailStr
     subject: str
     template: str
-    variables: dict={}
+    variables: dict = {}
+
 
 class SendEmailResponse(BaseModel):
-    message: str ="Email sent successfuly"
+    message: str = "Email sent successfuly"

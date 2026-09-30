@@ -12,4 +12,5 @@ class Settings(BaseSettings):
     INTERNAL_API_KEY: str
     APP_URL: str
 
-settings = Settings() #type: ignore
+
+settings = Settings()  # type: ignore
